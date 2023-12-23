@@ -1,9 +1,5 @@
-import axios, {
-  AxiosInstance,
-  AxiosRequestConfig,
-  AxiosError,
-  AxiosResponse,
-} from 'axios';
+/* eslint-disable @typescript-eslint/no-unsafe-return */
+import axios, { AxiosInstance, AxiosRequestConfig, AxiosError } from 'axios';
 
 const config: AxiosRequestConfig = {
   baseURL: import.meta.env.VITE_API,
@@ -28,7 +24,7 @@ axiosInstance.interceptors.request.use(
 );
 
 axiosInstance.interceptors.response.use(
-  function (response: AxiosResponse<unknown>) {
+  function (response) {
     return response.data;
   },
   function (error: AxiosError) {
