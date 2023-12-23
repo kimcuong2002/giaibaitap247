@@ -57,7 +57,6 @@ export function ButtonTheme() {
   const setTheme = useThemeStore((state) => state.setTheme);
   return (
     <MaterialUISwitch
-      sx={{ m: 1 }}
       defaultChecked
       onChange={(e) =>
         e.target.checked
