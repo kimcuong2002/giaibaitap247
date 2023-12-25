@@ -1,9 +1,9 @@
 import axiosInstance from './config';
-import { ResponseDatas, SubjectType } from '../interface/subject-type';
+import { SubjectType } from '../ts/types/subject-type';
 
 const subjectURL = '/v1/subjects';
 const subjectApi = {
-  getSubjects: (): Promise<ResponseDatas> => axiosInstance.get(`${subjectURL}`),
+  getSubjects: (): Promise<SubjectType[]> => axiosInstance.get(`${subjectURL}`),
 
   getDetail: (_id: string): Promise<SubjectType> =>
     axiosInstance.get(`${subjectURL}/${_id}`),
