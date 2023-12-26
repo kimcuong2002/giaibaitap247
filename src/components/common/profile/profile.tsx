@@ -3,8 +3,8 @@ import { GrLinkNext } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 
 import ActionProfile from '../action-profile/action-profile';
-import { ButtonTheme } from '../button/button-theme';
 import { handle, medal1, rank2 } from '@/assets';
+import { ButtonTheme } from '@/components';
 import { useUserQuery } from '@/hooks';
 
 const Profile = () => {
