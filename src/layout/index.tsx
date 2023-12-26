@@ -7,9 +7,13 @@ import HeaderComponent from './header';
 const LayoutComponent = () => {
   return (
     <Box>
-      <HeaderComponent />
-      <Box className="flex justify-center items-center">
-        <Outlet />
+      <Box className="shadow-xl">
+        <HeaderComponent />
+      </Box>
+      <Box className="bg-[#F6F6F7]">
+        <Box className="flex justify-center items-center px-4 lg:mx-9 py-10">
+          <Outlet />
+        </Box>
       </Box>
       <FooterComponent />
     </Box>
