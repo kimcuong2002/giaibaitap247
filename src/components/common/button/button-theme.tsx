@@ -53,7 +53,7 @@ const MaterialUISwitch = styled((props: SwitchProps) => <Switch {...props} />)(
   }),
 );
 
-export function ButtonTheme() {
+function ButtonTheme() {
   const setTheme = useThemeStore((state) => state.setTheme);
   return (
     <MaterialUISwitch
@@ -66,3 +66,4 @@ export function ButtonTheme() {
     />
   );
 }
+export default ButtonTheme;
