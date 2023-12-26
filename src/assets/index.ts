@@ -6,6 +6,7 @@ import edit_profile from './images/edit-profile.png';
 import english from './images/english.png';
 import flag from './images/flagflag.png';
 import gdcd from './images/gdcd.png';
+import hand from './images/hand.png';
 import handle from './images/handle.png';
 import hoahoc from './images/hoahoc.png';
 import khtn from './images/khtn.png';
@@ -21,11 +22,14 @@ import question1 from './images/question1.png';
 import question2 from './images/question2.png';
 import rank2 from './images/rank2.svg';
 import sinhhoc from './images/sinhhoc.png';
+import stop_watch from './images/stopwatch.png';
 import su_dia from './images/su&dia.png';
 import tinhoc from './images/tinhoc.png';
 import vatli from './images/vatli.png';
 
 export {
+  hand,
+  stop_watch,
   flag,
   rank2,
   profile,
