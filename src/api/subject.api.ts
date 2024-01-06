@@ -1,5 +1,5 @@
 import axiosInstance from './config';
-import { SubjectType } from '../ts/types/subject-type';
+import { SubjectType } from '../ts/types/subject.type';
 
 const subjectURL = '/v1/subjects';
 const subjectApi = {

@@ -3,8 +3,10 @@ import { FC } from 'react';
 import { Navigate, useRoutes } from 'react-router-dom';
 
 import LayoutComponent from '../layout';
-import HomePage from '../pages/home';
+import HomePage from '../pages/home-page/home';
 import NotFound from '../pages/not-found';
+import { Profile } from '@/components';
+import QuestionDetail from '@/pages/question';
 
 const routes = [
   {
@@ -22,6 +24,14 @@ const routes = [
       {
         path: '*',
         element: <NotFound />,
+      },
+      {
+        path: '/profile',
+        element: <Profile />,
+      },
+      {
+        path: '/code',
+        element: <QuestionDetail />,
       },
     ],
   },
